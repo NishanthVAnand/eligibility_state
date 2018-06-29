@@ -1,6 +1,6 @@
 # Eligibility State Representation
 This repository contains the experiments I perform with Eligibilty State Representation.
-Eligibilty State Representation is a simple idea of summing up the discounted observations over time in POMDP to form a state. A linear function approximation is built on top of this state representation to estimate a value function.
+Eligibilty State Representation is a simple idea of summing up the discounted observations over time in a POMDP to form a state. A linear function approximation is built on top of this state representation to estimate a value function.
 
 If `O_t` is the observation over time `t`. Then the state `S_t` at any time step is represented as,
 
@@ -18,6 +18,6 @@ Run the below command to execute the code,
 ```
 python main.py --env=ENV_NAME --eps=INITIAL_EXPLORATION --n_epi=NUM_EPISODES --lr_rate=LEARNING_RATE --trace=TRACE_PARAMETER --gamma=DISCOUNT --n_exp=NUM_EXPERIMENTS --FA_type=TYPE_OF_FUNCTION_APPROXIMATOR
 ```
-The package currenlty supports,
-* env - Any OpenAI GYM environments
-* FA_type - Linear Function Approximator (OneLinearNet)
+The package currently supports,
+* `--env` - Any OpenAI GYM environments
+* `--FA_type` - Linear Function Approximator (OneLinearNet)
