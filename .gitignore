@@ -109,3 +109,4 @@ ENV/
 # other stuff
 .DS_Store
 .idea/
+__pycache__
